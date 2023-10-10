@@ -2,14 +2,43 @@
     margin: 0;
     font-family: Arial;
     border: border-box;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.5s linear;
 }
 
+header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    background-color: #e2e7e6;
+    padding: 0.85rem 10%;
+}
 
+header .logo {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+header .navbar a {
+    font-size: 1.7rem;
+    padding: 0 1.5rem;
+    color: black;
+}
 .shop-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: #e2e7e6;
+    margin-top: 50px;
 }
 
 
@@ -58,4 +87,9 @@ img{
 
 .description ul {
     margin-top: 15px;
+}
+
+footer{
+    margin-top: 50px;
+    border-top: 1px solid black;
 }
